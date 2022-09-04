@@ -1,1 +1,8 @@
 /* my css style sheet */
+
+.jumbotron {
+    color:rgba(128, 4, 0, 0.877);
+    background-image: url("../images/Beef.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+}

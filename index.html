@@ -19,6 +19,11 @@
   <!--start of Dashboard-->
   <div class="container">
     <!--nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="https://github.com/ksreeja993/Biodiversity_with_Plotly">Link to GitHub</a>
+    
+    </nav>
+    <h4>Roza has a partially completed dashboard that she needs to finish. She has a completed panel for demographic information and now needs to visualize the bacterial data for each volunteer. Specifically, her volunteers should be able to identify the top 10 bacterial species in their belly buttons. That way, if Improbable Beef identifies a species as a candidate to manufacture synthetic beef, Roza's volunteers will be able to identify whether that species is found in their navel.</h4>
 
     <!--jumbotron-->
     <section class="jumbotron_section">
@@ -26,16 +31,20 @@
         <div class="col-md-12 jumbotron text-center">
           <h1>Belly Button Biodiversity Dashboard</h1>
           <p>Use the interactive charts below to explore the dataset</p>
+        
         </div>
+        
       </div>
+
     </section>
+
 
     <!--bar and guage section-->
     <section class="bar_and_guage">
       <div class="row">
 
         <!--pulldown menu and meta data-->
-        <div class="col-md-2">
+        <div class="col-md-3">
           <div class="well">
             <h5>Test Subject ID No.:</h5>
             <select id="selDataset" onchange="optionChanged(this.value)"></select>
@@ -47,6 +56,8 @@
               <h3 class="panel-title">Demographic Info</h3>
             </div>
             <div id="sample-metadata" class="panel-body"></div>
+            <div class="panel-footer">Note: WFREQ is used in the guage to the right</div>
+            
           </div>
         </div>
 
@@ -56,7 +67,7 @@
         </div>
 
         <!--guage chart-->
-        <div class="col-md-5">
+        <div class="col-md-4">
           <div id="gauge"></div>
         </div>
       </div>
